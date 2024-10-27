@@ -269,3 +269,34 @@ h2 {
   text-transform: uppercase;
 }
 
+.section3 {
+  position: relative;
+  padding-top: 45%;
+  margin-bottom: 200px;
+
+  #image3 {
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: -70px;
+  }
+}
+
+.two-items-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.heading-number {
+  font-family: "Saudagar";
+  font-size: 1.875rem;
+  line-height: 2.8125rem;
+  font-style: normal;
+  font-weight: normal;
+  color: #dcac9b;
+  text-transform: uppercase;
+  margin: 0;
+}
+
