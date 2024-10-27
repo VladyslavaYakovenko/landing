@@ -225,3 +225,47 @@ a {
   }
 }
 
+.coming-soon-section {
+  position: relative;
+  background-color: #1a1a1a;
+  text-align: center;
+
+  h1 {
+    font-family: "Saudagar";
+    color: #ffffff;
+    font-size: 15rem;
+    line-height: 15rem;
+    opacity: 0.06;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  div {
+    display: inline-block;
+    width: min-content;
+
+    h2 {
+      font-family: "Saudagar";
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 3.125rem;
+      letter-spacing: 3.5px;
+    }
+
+    p {
+      white-space: pre;
+      margin-bottom: 240px;
+      opacity: 0.8;
+    }
+  }
+}
+
+h2 {
+  font-family: "Saudagar";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 4.0625rem;
+  text-transform: uppercase;
+}
+
