@@ -1,8 +1,3 @@
-// Before start remember:
-// 1. Set Latin range
-// 2.
-// Fonts
-
 * {
   box-sizing: border-box;
 }
@@ -314,8 +309,6 @@ h2 {
 .section4 {
   background-color: #1a1a1a;
 
-  // height: 950px;
-
   .two-items-container {
     align-items: center;
   }
@@ -360,8 +353,6 @@ $phone-height: 660px;
   animation-fill-mode: forwards;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-  // animation: name duration timing-function delay iteration-count direction
-  //   fill-mode;
 }
 
 .circle {
@@ -559,15 +550,6 @@ input:valid + label,
 select:valid + label {
   opacity: 1;
 }
-
-// @keyframes heading-number-move {
-//   from {
-//     margin-left: auto;
-//   }
-//   to {
-//     margin-left: 5%;
-//   }
-// }
 
 @media screen and (max-width: 1220px) {
   .phone-section {
