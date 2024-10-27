@@ -1,0 +1,103 @@
+// Before start remember:
+// 1. Set Latin range
+// 2.
+// Fonts
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.grey-op {
+  color: #1a1a1a;
+  opacity: 0.8;
+}
+
+.grey {
+  color: #1a1a1a;
+}
+
+.white {
+  color: #fff;
+}
+
+.white-op {
+  color: #fff;
+  opacity: 0.8;
+}
+
+// There's no need using the whole set of chars for one word on whole page. I can simply load chars needed for one word!!!
+// font display
+// Fonts:
+
+// MOBILE FIRST!!!
+@font-face {
+  font-family: "Montserrat_Normal";
+  src: url("./assets/fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("./assets/fonts/Montserrat-Regular.woff") format("woff"),
+    url("./assets/fonts/Montserrat-Regular.ttf") format("truetype"),
+    url("./assets/fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+0000-001f, U+0041-005a, u+0061-007a;
+}
+
+@font-face {
+  font-family: "Saudagar";
+  src: url("./assets/fonts/Saudagar.eot");
+  src: local("☺"), url("./assets/fonts/Saudagar.woff") format("woff"),
+    url("./assets/fonts/Saudagar.ttf") format("truetype"),
+    url("./assets/fonts/Saudagar.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+0000-001f, U+0041-005a, u+0061-007a;
+}
+
+@font-face {
+  font-family: "SukhumvitSet";
+  src: url("./assets/fonts/sukhumvit-set_text.woff.eot");
+  src: local("☺"),
+    url("./assets/fonts/sukhumvit-set_text.woff.woff") format("woff"),
+    url("./assets/fonts/sukhumvit-set_text.woff.ttf") format("truetype"),
+    url("./assets/fonts/sukhumvit-set_text.woff.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// light
+@font-face {
+  font-family: "SukhumvitSet";
+  src: url("./assets/fonts/SukhumvitSet-Light.eot");
+  src: local("☺"), url("./assets/fonts/SukhumvitSet-Light.woff") format("woff"),
+    url("./assets/fonts/SukhumvitSet-Light.ttf") format("truetype"),
+    url("./assets/fonts/SukhumvitSet-Light.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+// medium
+@font-face {
+  font-family: "SukhumvitSet";
+  src: url("./assets/fonts/SukhumvitSet-Medium.eot");
+  src: local("☺"), url("./assets/fonts/SukhumvitSet-Medium.woff") format("woff"),
+    url("./assets/fonts/SukhumvitSet-Medium.ttf") format("truetype"),
+    url("./assets/fonts/SukhumvitSet-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+// bold
+@font-face {
+  font-family: "SukhumvitSet";
+  src: url("./assets/fonts/SukhumvitSet-Bold.eot");
+  src: local("☺"), url("./assets/fonts/SukhumvitSet-Bold.woff") format("woff"),
+    url("./assets/fonts/SukhumvitSet-Bold.ttf") format("truetype"),
+    url("./assets/fonts/SukhumvitSet-Bold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
