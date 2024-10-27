@@ -9,6 +9,7 @@
 
 body {
   overflow-x: hidden;
+  margin: 0;
 }
 
 .grey-op {
@@ -125,6 +126,9 @@ p {
 }
 
 a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-family: "SukhumvitSet", sans-serif;
   text-decoration: none;
   font-size: 1.125rem;
@@ -140,9 +144,10 @@ a {
   }
 
   &::before {
-    position: absolute;
-    top: -1.5px;
-    left: -25px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: 2em;
   }
 
   &.google-play::before {
@@ -190,6 +195,7 @@ a {
   align-items: center;
 
   .subscribe-btn {
+    display: block;
     color: #1a1a1a;
     font-weight: bold;
     background-color: #dcac9b;
@@ -401,19 +407,18 @@ $phone-height: 660px;
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 182px;
   height: 52px;
   text-align: center;
   background-color: #000;
   margin: 10px;
-  padding-top: 12px;
 
-  a::before {
-    top: 10px;
-  }
-
-  a:hover {
-    color: gray;
+  &:hover {
+    background-color: #000000d8;
+    color: white !important;
   }
 }
 
@@ -438,9 +443,9 @@ $phone-height: 660px;
 }
 
 .form-container {
+  height: 100vh;
   width: 50%;
   padding: 5% 7%;
-  padding-bottom: 0;
 
   background-color: #1a1a1a;
   backdrop-filter: blur(4px);
@@ -587,6 +592,7 @@ select:focus + label {
   }
 
   .store-links {
+    display: flex;
     margin-left: auto;
   }
 

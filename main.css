@@ -5,6 +5,7 @@
 
 body {
   overflow-x: hidden;
+  margin: 0;
 }
 
 .grey-op {
@@ -94,6 +95,9 @@ p {
 }
 
 a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-family: "SukhumvitSet", sans-serif;
   text-decoration: none;
   font-size: 1.125rem;
@@ -107,9 +111,10 @@ a:hover, a::after {
   transition: 0.5s;
 }
 a::before {
-  position: absolute;
-  top: -1.5px;
-  left: -25px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  font-size: 2em;
 }
 a.google-play::before {
   content: url("./assets/images/google-play.svg");
@@ -152,6 +157,7 @@ a.app-store::before {
   align-items: center;
 }
 .intro .subscribe-btn {
+  display: block;
   color: #1a1a1a;
   font-weight: bold;
   background-color: #dcac9b;
@@ -341,18 +347,18 @@ h2 {
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 182px;
   height: 52px;
   text-align: center;
   background-color: #000;
   margin: 10px;
-  padding-top: 12px;
 }
-.btn a::before {
-  top: 10px;
-}
-.btn a:hover {
-  color: gray;
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.8470588235);
+  color: white !important;
 }
 
 .store-links-container {
@@ -375,9 +381,9 @@ h2 {
 }
 
 .form-container {
+  height: 100vh;
   width: 50%;
   padding: 5% 7%;
-  padding-bottom: 0;
   background-color: #1a1a1a;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
@@ -500,6 +506,7 @@ select:focus + label {
     line-height: 17.1875rem;
   }
   .store-links {
+    display: flex;
     margin-left: auto;
   }
   .text-container {

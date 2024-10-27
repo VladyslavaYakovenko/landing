@@ -1,15 +1,8 @@
-// window.onload = () => {
-//   const canvasCircle = document.getElementById("strangeCircle");
-//   const ctx = canvasCircle.getContext("2d");
-//   const circle = document.getElementById("circle");
-//   ctx.drawImage(circle, 0, 0);
-
-//   document.body.removeChild(circle);
-// };
-
 const inViewport = (entries, observer) => {
   entries.forEach((entry) => {
-    entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+    if (!entry.target.classList.contains("is-inViewport")) {
+      entry.target.classList.add("is-inViewport", entry.isIntersecting);
+    }
   });
 };
 
