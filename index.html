@@ -180,6 +180,7 @@
                 name="firstName"
                 id="firstName"
                 placeholder="Your name"
+                required
               />
               <label for="firstName">first name</label>
             </div>
@@ -190,13 +191,14 @@
                 name="lastName"
                 id="lastName"
                 placeholder="Your lastname"
+                required
               />
               <label for="lastName">last name</label>
             </div>
 
             <div class="form-control">
-              <select name="interestSelect" id="interestSelect">
-                <option value="none" selected disabled hidden>Choose</option>
+              <select name="interestSelect" id="interestSelect" required>
+                <option value="" selected hidden>Choose</option>
                 <option value="client">Client</option>
                 <option value="lashes">Lashes</option>
               </select>
@@ -206,12 +208,24 @@
             </div>
 
             <div class="form-control">
-              <input type="text" name="city" id="city" placeholder="City" />
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="City"
+                required
+              />
               <label for="city">city</label>
             </div>
 
             <div class="form-control">
-              <input type="text" name="state" id="state" placeholder="State" />
+              <input
+                type="text"
+                name="state"
+                id="state"
+                placeholder="State"
+                required
+              />
               <label for="state">state</label>
             </div>
 
@@ -221,6 +235,7 @@
                 name="phoneNumber"
                 id="phoneNumber"
                 placeholder="Phone number"
+                required
               />
               <label for="phoneNumber">Phone</label>
             </div>
@@ -231,6 +246,7 @@
                 name="email"
                 id="email"
                 placeholder="Email address"
+                required
               />
               <label for="email">email</label>
             </div>

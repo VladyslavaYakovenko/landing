@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+button,
+input[type=submit] {
+  cursor: pointer;
+}
+
 body {
   overflow-x: hidden;
   margin: 0;
@@ -478,7 +483,11 @@ select + label {
 }
 
 input:focus + label,
-select:focus + label {
+select:focus + label,
+input:hover + label,
+select:hover + label,
+input:valid + label,
+select:valid + label {
   opacity: 1;
 }
 
