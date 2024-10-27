@@ -1,7 +1,6 @@
 @charset "UTF-8";
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -34,7 +33,6 @@ body {
   font-style: normal;
   unicode-range: U+0000-001f, U+0041-005a, u+0061-007a;
 }
-
 @font-face {
   font-family: "Saudagar";
   src: url("./assets/fonts/Saudagar.eot");
@@ -43,7 +41,6 @@ body {
   font-style: normal;
   unicode-range: U+0000-001f, U+0041-005a, u+0061-007a;
 }
-
 @font-face {
   font-family: "SukhumvitSet";
   src: url("./assets/fonts/sukhumvit-set_text.woff.eot");
@@ -52,7 +49,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "SukhumvitSet";
   src: url("./assets/fonts/SukhumvitSet-Light.eot");
@@ -60,7 +56,6 @@ body {
   font-weight: 300;
   font-style: normal;
 }
-
 @font-face {
   font-family: "SukhumvitSet";
   src: url("./assets/fonts/SukhumvitSet-Medium.eot");
@@ -68,7 +63,6 @@ body {
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
   font-family: "SukhumvitSet";
   src: url("./assets/fonts/SukhumvitSet-Bold.eot");
@@ -76,7 +70,6 @@ body {
   font-weight: bold;
   font-style: normal;
 }
-
 .title,
 a,
 p {
@@ -109,23 +102,18 @@ a {
   margin-left: 30px;
   font-weight: 500;
 }
-
 a:hover, a::after {
   color: black;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 a::before {
   position: absolute;
   top: -1.5px;
   left: -25px;
 }
-
 a.google-play::before {
   content: url("./assets/images/google-play.svg");
 }
-
 a.app-store::before {
   content: url("./assets/images/app-store.svg");
 }
@@ -134,7 +122,6 @@ a.app-store::before {
   position: relative;
   background-color: rgba(0, 0, 0, 0.75);
 }
-
 .intro-container::after {
   position: absolute;
   content: "";
@@ -149,37 +136,21 @@ a.app-store::before {
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 100px;
 }
-
 .header p {
   margin-right: 3.7em;
   font-weight: 500;
 }
 
 .intro {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .intro .subscribe-btn {
   color: #1a1a1a;
   font-weight: bold;
@@ -192,13 +163,10 @@ a.app-store::before {
   margin-bottom: 350px;
   padding-top: 15px;
 }
-
 .intro .subscribe-btn:hover {
   background-color: #c09485;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .intro h1 {
   font-family: "Saudagar";
   text-transform: uppercase;
@@ -207,7 +175,6 @@ a.app-store::before {
   font-weight: normal;
   line-height: 5rem;
 }
-
 .intro p {
   font-family: "SukhumvitSet";
   font-weight: 300;
@@ -221,7 +188,6 @@ a.app-store::before {
   background-color: #1a1a1a;
   text-align: center;
 }
-
 .coming-soon-section h1 {
   font-family: "Saudagar";
   color: #ffffff;
@@ -231,14 +197,11 @@ a.app-store::before {
   text-transform: uppercase;
   font-weight: 400;
 }
-
 .coming-soon-section div {
   display: inline-block;
-  width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
 }
-
 .coming-soon-section div h2 {
   font-family: "Saudagar";
   text-transform: uppercase;
@@ -246,7 +209,6 @@ a.app-store::before {
   font-size: 3.125rem;
   letter-spacing: 3.5px;
 }
-
 .coming-soon-section div p {
   white-space: pre;
   margin-bottom: 240px;
@@ -267,7 +229,6 @@ h2 {
   padding-top: 45%;
   margin-bottom: 200px;
 }
-
 .section3 #image3 {
   width: 80%;
   position: absolute;
@@ -276,18 +237,10 @@ h2 {
 }
 
 .two-items-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .heading-number {
@@ -304,11 +257,8 @@ h2 {
 .section4 {
   background-color: #1a1a1a;
 }
-
 .section4 .two-items-container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .section5 {
@@ -320,41 +270,23 @@ h2 {
   width: 25%;
 }
 
-@-webkit-keyframes rotateCircle {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
-  }
-}
-
 @keyframes rotateCircle {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
+    transform: rotate(359deg);
   }
 }
-
 .that-circle {
   position: relative;
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  -webkit-animation-name: rotateCircle;
-          animation-name: rotateCircle;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: rotateCircle;
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 .circle {
@@ -366,19 +298,10 @@ h2 {
 }
 
 .phone-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 50px;
 }
 
@@ -393,7 +316,6 @@ h2 {
   border: 4px solid black;
   border-radius: 15px;
 }
-
 .phone::after {
   content: "";
   width: 400px;
@@ -406,7 +328,6 @@ h2 {
   top: 129px;
   z-index: -1;
 }
-
 .phone::before {
   content: "";
   position: absolute;
@@ -427,35 +348,24 @@ h2 {
   margin: 10px;
   padding-top: 12px;
 }
-
 .btn a::before {
   top: 10px;
 }
-
 .btn a:hover {
   color: gray;
 }
 
 .store-links-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-and-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #fff;
 }
-
 .form-and-image .image-left-to-form {
   width: 50%;
   background-image: url("./assets/images/image5.svg");
@@ -472,13 +382,11 @@ h2 {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
-
 .form-container form input,
 .form-container form select {
   width: 100%;
 }
-
-.form-container form input:not([type="submit"]) {
+.form-container form input:not([type=submit]) {
   background-color: inherit;
   outline: none;
   border: none;
@@ -491,8 +399,7 @@ h2 {
   font-weight: 300;
   font-size: 16px;
 }
-
-.form-container form input[type="submit"] {
+.form-container form input[type=submit] {
   font-family: "SukhumvitSet";
   font-size: 1.125rem;
   line-height: 1.935rem;
@@ -522,7 +429,7 @@ option {
   border-radius: 2px;
 }
 
-input:not([type="submit"]),
+input:not([type=submit]),
 select {
   margin-top: 1.5rem;
 }
@@ -542,8 +449,7 @@ label {
   font-size: 1rem;
   line-height: 165%;
 }
-
-label[for="form"] {
+label[for=form] {
   color: #fff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Saudagar;
@@ -554,7 +460,7 @@ label[for="form"] {
   margin-bottom: 5%;
 }
 
-label:not([for="form"]) {
+label:not([for=form]) {
   position: absolute;
   top: 0;
 }
@@ -562,7 +468,6 @@ label:not([for="form"]) {
 input + label,
 select + label {
   opacity: 0;
-  -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 
@@ -576,13 +481,9 @@ select:focus + label {
     display: none;
   }
 }
-
 @media screen and (min-width: 850px) {
   .header {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   .heading-number + h2 {
     text-align: left;
@@ -591,13 +492,8 @@ select:focus + label {
     margin-left: 5%;
   }
   .two-items-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
   .intro h1 {
     font-size: 17.1875rem;
@@ -617,12 +513,10 @@ select:focus + label {
     text-align: left;
   }
   [data-inviewport] {
-    -webkit-transition: 2s;
     transition: 2s;
     left: -100%;
   }
   [data-inviewport].is-inViewport {
     left: 0;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
